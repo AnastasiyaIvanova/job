@@ -214,6 +214,12 @@ main .main_process{
 main .main_process h1{
 	text-align: center;
 }
+.main_video{
+	text-align: center;
+}
+.main_video video{
+	margin-top: 60px;
+}
 .main_process p{
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 16px;
@@ -235,7 +241,7 @@ main .main_services{
   grid-template-rows: 50% 50%;
 	text-align: center;
 	padding: 0 80px;
-	grid-column-gap: 10%;
+	grid-column-gap: 13%;
   grid-row-gap: 30px;
 }
 .main_services i{
