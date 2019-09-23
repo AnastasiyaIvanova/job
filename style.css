@@ -23,6 +23,9 @@ header{
 	margin-top: 17px;
 	margin-left: 7%;
 }
+html{
+		min-width: 1068px;
+}
 .header_logo img{
 	width: auto;
 	height: 25px;
@@ -105,15 +108,44 @@ main .main_about{
 	height: 573px;
 	text-align: left;
 }
+.bar_one{
+	height: 4px;
+	background: #d8d8d8;
+	margin: 20px 0;
+}
+.bar_one div{
+	background: #10c9c3;
+	width: 75%;
+	height: 4px;
+}
+.bar_two{
+		height: 4px;
+    background: #d8d8d8;
+    margin: 20px 0;
+}
+.bar_two div{
+	background: #10c9c3;
+	width: 90%;
+	height: 4px;
+}
+.bar_three{
+	height: 4px;
+	background: #d8d8d8;
+	margin: 20px 0;
+}
+.bar_three div{
+	background: #10c9c3;
+	width: 65%;
+	height: 4px;
+}
 .about_left h1{
 	margin-top: 165px;
-	margin-left: 7%;
+	margin-left: 60px;
 }
 .about_left ul{
 	font-size: 10px;
 	font-weight: bold;
-	margin-top: 40px;
-	margin-left: 7%;
+	margin: 60px;
 }
 .about_right{
 	background: #e9e9e9;
@@ -179,7 +211,8 @@ main .about_work{
 .main_work img{
 	float: left;
     /*clear: both;*/
-    height: 25vw;
+    /* height: 25vw; */
+		width: 100%;
     overflow: hidden;
     z-index: 1;
 }
@@ -233,7 +266,6 @@ main .main_process h1{
 main .main_services{
 	background: #f5f5f5;
 	padding: 100px 0;
-	overflow: hidden;
 }
 .services{
 	display: grid;
@@ -281,11 +313,8 @@ main .main_clients{
 	grid-template-columns: 20% 20% 20% 20% 20%;
 }
 .main_clients div{
-	margin: 0 auto;
-}
-.main_clients div{
-	width: 19%;
   display: inline-block;
+	margin: 0 auto;
 }
 .project_need{
 	padding: 100px 0;
@@ -308,23 +337,27 @@ main .main_clients{
 	width: 80%;
 }
 input{
-	width: 322px;
-	height: 50px;
+	width: 302px;
+	/* height: 50px; */
 	margin-bottom: 30px;
 	font-size: 15px;
 	font-family: 'Nunito Sans', sans-serif;
+	padding: 10px;
+	border: none;
 }
 input:first-of-type{
 	margin-right: 16px;
 }
 .input_title{
-	width: 100%;
+	width: 645px;
 }
 textarea{
 	height: 170px;
-	width: 100%;
+	width: 645px;
 	font-size: 15px;
 	font-family: 'Nunito Sans', sans-serif;
+	border: none;
+	padding: 10px;
 }
 .project_wrapper a{
 	color: #FFF;
@@ -343,12 +376,16 @@ footer{
 	padding: 100px 0;
 	color: #bcbcbc;
 	font-size: 15px;
+		min-width: 1018px;
 }
-footer > div{
+.footer_wrapper{
+	padding: 0 5%;
+}
+.footer_wrapper > div{
 	display: inline-block;
 }
 .block_company{
-	margin-left: 100px;
+	/* margin-left: 100px; */
 	display: inline-block;
 	width: 20%;
 }
@@ -367,7 +404,7 @@ footer a{
 	color: #bcbcbc;
 }
 .block_contacts{
-	margin: 0 140px;
+	margin: 0 10%;
 }
 .block_links_right{
 	margin-left: 50px;
