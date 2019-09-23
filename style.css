@@ -18,21 +18,20 @@ header{
 	justify-content: space-between;
 }
 .header_logo{
-	text-transform: uppercase;/*текст picture большими буквами*/
+	text-transform: uppercase;
 	cursor: pointer;
 	margin-top: 17px;
 	margin-left: 7%;
 }
 html{
-		min-width: 1068px;
+		min-width: 850px;
 }
 .header_logo img{
 	width: auto;
 	height: 25px;
 }
 nav{
-	margin-top: 17px;/*
-	margin-left: 39%;*/
+	margin-top: 17px;
 }
 .topnav a{
 	color: #000000;
@@ -96,9 +95,6 @@ main .main_about{
 }
 .about_about img{
 	margin-top: 40px;
-}
-.about_skills{/*
-	padding: 165px 0 162px 0;*/
 }
 .about_left{
 	background: #f8f9f9;
@@ -181,12 +177,13 @@ main .about_work{
 	float: left;
 }
 .work_numbers{
-    text-align: left;
-    display: block;
-    margin: 0 10px;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-    margin: 7px auto 0;
+	padding-left: 7px;
+	text-align: left;
+	display: block;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	margin: 2px auto 0;
+	line-height: 20px;
 }
 .work_block .numb{
 	font-size: 18px;
@@ -196,9 +193,7 @@ main .about_work{
 }
 .main_work > div{
 	float: left;
-    /*clear: both;*/
     width: 25%;
-    /*height: 25vw;*/
     overflow: hidden;
     z-index: 1;
     position: relative;
@@ -210,8 +205,6 @@ main .about_work{
 }
 .main_work img{
 	float: left;
-    /*clear: both;*/
-    /* height: 25vw; */
 		width: 100%;
     overflow: hidden;
     z-index: 1;
@@ -338,7 +331,6 @@ main .main_clients{
 }
 input{
 	width: 302px;
-	/* height: 50px; */
 	margin-bottom: 30px;
 	font-size: 15px;
 	font-family: 'Nunito Sans', sans-serif;
@@ -376,18 +368,17 @@ footer{
 	padding: 100px 0;
 	color: #bcbcbc;
 	font-size: 15px;
-		min-width: 1018px;
 }
 .footer_wrapper{
 	padding: 0 5%;
-}
-.footer_wrapper > div{
-	display: inline-block;
+
+	display: grid;
+    grid-template-columns: 17% 14% 20% 19% 17% 17%;
+    grid-template-areas: "left . center one two three";
 }
 .block_company{
-	/* margin-left: 100px; */
 	display: inline-block;
-	width: 20%;
+	grid-area: left;
 }
 .block_company h3{
 	font-family: 'Montserrat', sans-serif;
@@ -404,11 +395,15 @@ footer a{
 	color: #bcbcbc;
 }
 .block_contacts{
-	margin: 0 10%;
+	grid-area: center;
+}
+.block_links_left{
+	margin-left: 50%;
+	grid-area: one;
 }
 .block_links_right{
-	margin-left: 50px;
+	grid-area: two;
 }
 .block_social{
-	margin-left: 120px;
+	grid-area: three;
 }
